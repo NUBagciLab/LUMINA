@@ -24,6 +24,12 @@ In each task (Diagnosis, BIRADS, Density), run
 
     ./main.sh [-model model_name] [-input_size size] [-data_path data_path]
 
+for CNNs. Here, [-input_size] can be 224 or 512, [-model] can be efficientnet_b0, densenet121, resnet50.
+
+    ./main_swin.sh [-input_size size] [-data_path data_path]
+
+for swin-T. Other models may be supported but not tested yet.
+
 # Citation and Acknowledgement
 If you use this dataset in your research, please cite our CVPR 2026 paper:
 
