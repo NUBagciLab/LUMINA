@@ -8,6 +8,7 @@
   <img src="figures/pipeline.png" alt="Pancreas subregion segmentation overview" width="100%" />
 </p>
 
+# Dataset
 
 Dataset on Kaggle:
 
@@ -17,6 +18,11 @@ Dataset on OSF:
     https://osf.io/b63jc/
 
 Please download LUMINA_PNG, Benign_Cases.xlsx, and Malign_Cases.xlsx, then put the two xlsx files under LUMINA_PNG. Other files are provided for reference.
+
+# Training and Testing
+In each task (Diagnosis, BIRADS, Density), run
+
+    ./main.sh [-model model_name] [-input_size size] [-data_path data_path]
 
 # Citation and Acknowledgement
 If you use this dataset in your research, please cite our CVPR 2026 paper:
