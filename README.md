@@ -33,6 +33,9 @@ for CNNs. Here, [-input_size] can be 224 or 512, [-model] can be efficientnet_b0
     ./main_swin.sh [-input_size size] [-data_path data_path]
 
 for swin-T. Other models may be supported but not tested yet.
+For example:
+
+    ./main.sh -model efficientnet_b0 -input_size 224 -data_path ./LUMINA_PNG
 
 <p align="center">
   <img src="figures/diagnosis.png" alt="" width="100%" />
