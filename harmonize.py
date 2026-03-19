@@ -5,10 +5,9 @@ Created on Fri Jun 27 15:10:12 2025
 @author: pky0507
 """
 
-import os
 import argparse
 from tqdm import tqdm
-# from data_loader import USHI
+
 import numpy as np
 import cv2
 import pydicom
@@ -94,16 +93,4 @@ if __name__ == "__main__":
     # Run multiprocessing
     with Pool(processes=cpu_count()) as pool:
         list(tqdm(pool.imap_unordered(process_file, [(img_path, args, ref) for img_path in image]), total=len(image)))
-    # for img_path in tqdm(image):
-    #     output_path = os.path.dirname(img_path).replace(args.data_path, args.output_dir)
-    #     if not os.path.exists(output_path):
-    #         os.makedirs(output_path)
-    #     output_path = os.path.join(output_path, os.path.basename(img_path))
-    #     if 'Benign' in img_path:
-    #         output_path_png = os.path.join(args.output_dir+'_PNG', "Benign", os.path.basename(os.path.dirname(img_path)))+os.path.basename(img_path).replace('.dcm', '.png')
-    #     else:
-    #         output_path_png = os.path.join(args.output_dir+'_PNG', "Malignant", os.path.basename(os.path.dirname(img_path)))+os.path.basename(img_path).replace('.dcm', '.png') 
-    #     im = pydicom.dcmread(img_path)
-    #     im = process(im, ref)
-    #     im.save_as(output_path) # Save the normalized and resized DICOM file
     #     cv2.imwrite(output_path_png, (im.pixel_array / (2**13-1) * 255).astype(np.uint8))
