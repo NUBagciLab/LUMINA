@@ -19,8 +19,12 @@ Dataset on OSF:
 
 Please download LUMINA_PNG, Benign_Cases.xlsx, and Malign_Cases.xlsx, then put the two xlsx files under LUMINA_PNG. Other files are provided for reference.
 
+# (Optional) To harmonize LUMINA dataset (generate LUMINA and LUMINA_PNG using LUMINA_RAW):
+
+    python harmonize.py --data-path PATH_TO_LUMINA_RAW -o ./LUMINA
+
 # Training and Testing
-In each task (Diagnosis, BIRADS, Density), run
+In each task (Diagnosis, BIRADS, Density), go to the corresponding folder then run
 
     ./main.sh [-model model_name] [-input_size size] [-data_path data_path]
 
