@@ -38,7 +38,6 @@ def match_foreground_histogram(im, ref):
     Parameters:
         source (np.ndarray): Source image to be adjusted
         reference (np.ndarray): Reference image whose histogram we want to match
-        background_thresh (float): Pixels <= this value are considered background
 
     Returns:
         np.ndarray: Histogram-matched image (foreground only modified)
@@ -85,7 +84,6 @@ if __name__ == "__main__":
     
     args = parser.parse_args()
     count = 0
-    # image, label, = USHI(root=args.data_path)
     image = list_all_files(args.data_path)
     ref = pydicom.dcmread(os.path.join(args.data_path,'Malign/8/L_CC.dcm'))
     os.makedirs(os.path.join(args.output_dir+'_PNG', "Benign"), exist_ok=True)
