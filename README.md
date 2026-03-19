@@ -1,11 +1,11 @@
 # [CVPR2026] LUMINA: A Multi-Vendor Mammography Benchmark with Energy Harmonization Protocol
 
 <p align="center">
-  <img src="figures/samples.png" alt="Pancreas subregion segmentation overview" width="100%" />
+  <img src="figures/samples.png" alt="" width="100%" />
 </p>
 
 <p align="center">
-  <img src="figures/pipeline.png" alt="Pancreas subregion segmentation overview" width="100%" />
+  <img src="figures/pipeline.png" alt="" width="100%" />
 </p>
 
 # Dataset
@@ -33,6 +33,18 @@ for CNNs. Here, [-input_size] can be 224 or 512, [-model] can be efficientnet_b0
     ./main_swin.sh [-input_size size] [-data_path data_path]
 
 for swin-T. Other models may be supported but not tested yet.
+
+<p align="center">
+  <img src="figures/diagnosis.png" alt="" width="100%" />
+</p>
+
+<p align="center">
+  <img src="figures/birads.png" alt="" width="100%" />
+</p>
+
+<p align="center">
+  <img src="figures/density.png" alt="" width="50%" />
+</p>
 
 # Citation and Acknowledgement
 If you use this dataset in your research, please cite our CVPR 2026 paper:
