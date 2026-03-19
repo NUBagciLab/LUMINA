@@ -42,6 +42,11 @@ You can get the test results by running the command like the following:
     python fold_test.py --model --data-path /dataset/LUMINA_PNG --model efficientnet_b0 --input-size 224
 Here, [--input-size] can be 224 or 512, [--model] can be efficientnet_b0, densenet121, resnet50, or swin_t.
 
+The pretrained weights are available at Hugging Face: https://huggingface.co/phy710/LUMINA 
+
+Please put the folder "saved"  into the corresponding task.
+
+# Benchmark
 <p align="center">
   <img src="figures/diagnosis.png" alt="" width="100%" />
 </p>
@@ -54,7 +59,7 @@ Here, [--input-size] can be 224 or 512, [--model] can be efficientnet_b0, densen
   <img src="figures/density.png" alt="" width="50%" />
 </p>
 
-# Citation and Acknowledgement
+# Citation
 If you use this dataset in your research, please cite our CVPR 2026 paper:
 
     Hongyi Pan, Gorkem Durak, Halil Ertugrul Aktas, Andrea M. Bejar, Baver Tutun, Emre Uysal, Ezgi Bulbul, Mehmet Fatih Dogan, Berrin Erok, Berna Akkus Yildirim, Sukru Mehmet Erturk, Ulas Bagci. "LUMINA: A Multi-Vendor Mammography Benchmark with Energy Harmonization Protocol." CVPR 2026.
