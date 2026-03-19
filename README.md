@@ -8,14 +8,14 @@
   <img src="figures/pipeline.png" alt="" width="100%" />
 </p>
 
+# Paper link:
+arXiv: https://arxiv.org/abs/2603.14644
+
 # Dataset
 
-Dataset on Kaggle:
+Dataset on Kaggle: https://www.kaggle.com/datasets/phy710/lumina-mammography-dataset
 
-    https://www.kaggle.com/datasets/phy710/lumina-mammography-dataset
-Dataset on OSF: 
-
-    https://osf.io/b63jc/
+Dataset on OSF: https://osf.io/b63jc/
 
 Please download LUMINA_PNG, Benign_Cases.xlsx, and Malign_Cases.xlsx, then put the two xlsx files under LUMINA_PNG. Other files are provided for reference.
 
