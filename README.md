@@ -17,7 +17,7 @@ Dataset on Kaggle: https://www.kaggle.com/datasets/phy710/lumina-mammography-dat
 
 Dataset on OSF: https://osf.io/b63jc/
 
-Please download LUMINA_PNG, Benign_Cases.xlsx, and Malign_Cases.xlsx, then put the two xlsx files under LUMINA_PNG. Other files are provided for reference.
+Please download LUMINA_PNG, Benign_Cases.xlsx, and Malign_Cases.xlsx, then put the two xlsx files under LUMINA_PNG. Other files are provided for reference. You can create a folder called "dataset" and put LUMINA_PNG in it.
 
 # (Optional) To harmonize LUMINA dataset (generate LUMINA and LUMINA_PNG using LUMINA_RAW):
 
@@ -35,7 +35,12 @@ for CNNs. Here, [-input_size] can be 224 or 512, [-model] can be efficientnet_b0
 for swin-T. Other models may be supported but not tested yet.
 For example:
 
-    ./main.sh -model efficientnet_b0 -input_size 224 -data_path ./LUMINA_PNG
+    ./main.sh -model efficientnet_b0 -input_size 224 -data_path /dataset/LUMINA_PNG
+
+You can get the test results by running the command like the following:
+
+    python fold_test.py --model --data-path /dataset/LUMINA_PNG --model efficientnet_b0 --input-size 224
+Here, [--input-size] can be 224 or 512, [--model] can be efficientnet_b0, densenet121, resnet50, or swin_t.
 
 <p align="center">
   <img src="figures/diagnosis.png" alt="" width="100%" />
