@@ -42,7 +42,7 @@ You can get the test results by running the command like the following:
     python fold_test.py --model --data-path /dataset/LUMINA_PNG --model efficientnet_b0 --input-size 224
 Here, [--input-size] can be 224 or 512, [--model] can be efficientnet_b0, densenet121, resnet50, or swin_t.
 
-The pretrained weights are available at Hugging Face: https://huggingface.co/phy710/LUMINA 
+The pretrained weights are available at same OSF repo: https://osf.io/b63jc/
 
 Please put the folder "saved"  into the corresponding task.
 
