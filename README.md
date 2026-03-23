@@ -44,7 +44,7 @@ Here, [--input-size] can be 224 or 512, [--model] can be efficientnet_b0, densen
 
 The pretrained weights are available at same OSF repo under folder "models": https://osf.io/b63jc/
 
-Please put the folder "saved"  into the corresponding task.
+Please create a folder "saved"  into the corresponding task, then uncompress the zip files into "saved". Each zip file contains the 5-fold model checkponts.
 
 # Benchmark
 <p align="center">
