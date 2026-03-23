@@ -42,9 +42,7 @@ You can get the test results by running the command like the following:
     python fold_test.py --model --data-path /dataset/LUMINA_PNG --model efficientnet_b0 --input-size 224
 Here, [--input-size] can be 224 or 512, [--model] can be efficientnet_b0, densenet121, resnet50, or swin_t.
 
-The pretrained weights are available at same OSF repo under folder "models": https://osf.io/b63jc/
-
-Please create a folder "saved"  into the corresponding task, then uncompress the zip files into "saved". Each zip file contains the 5-fold model checkponts.
+The pretrained weights are available at https://drive.google.com/drive/folders/1_40R3yt2jjLXMzLksgqo06J2KIt9-vKb?usp=sharing
 
 # Benchmark
 <p align="center">
