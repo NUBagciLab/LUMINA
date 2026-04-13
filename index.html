@@ -27,6 +27,24 @@
         .btn:hover { background-color: #3e4c59; transform: translateY(-2px); }
         .btn-highlight { border: 2px solid #007bff; }
 
+
+        /* High-Impact Summary Box (PRS-Med Style) */
+        .summary-box {
+            background-color: #f1f4ff;
+            border-left: 6px solid #4493d1;
+            padding: 25px 35px;
+            border-radius: 10px;
+            margin: 50px 0;
+            text-align: left;
+        }
+        .summary-box p {
+            margin: 0;
+            font-size: 1.25rem;
+            color: #4051b5;
+            line-height: 1.6;
+        }
+        .summary-box strong { color: #283593; font-weight: 700; }
+        
         /* Content Sections */
         .content-section { margin-top: 50px; border-top: 1px dotted #ccc; padding-top: 30px; }
         h2 { font-size: 1.6rem; margin-top: 40px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
@@ -60,21 +78,29 @@
            <!-- <a href="https://arxiv.org/abs/2603.14644" class="btn"><i class="fas fa-file-pdf"></i> Paper</a> -->
             <a href="https://arxiv.org/abs/2603.14644" class="btn"><i class="fas fa-external-link-alt"></i> arXiv</a>
             <a href="https://github.com/NUBagciLab/LUMINA" class="btn btn-highlight"><i class="fab fa-github"></i> Code</a>
-            <a href="https://osf.io/b63jc/" class="btn"><span>📊</span> OSF</a>
+            <a href="https://osf.io/b63jc/" class="btn"><i class="fas fa-database"></i> OSF</a>
             <a href="https://www.kaggle.com/datasets/phy710/lumina-mammography-dataset" class="btn"><span>🤗</span> Kaggle</a>
         </div>
     </div>
 
+    <div class="summary-box">
+        <p>
+            <strong>LUMINA introduces a multi-vendor FFDM benchmark</strong> consisting of <strong>1,824 images</strong> across 6 vendors with pathology-confirmed labels. We propose a <strong>foreground-only energy harmonization</strong> approach that significantly reduces acquisition variability. Our benchmark demonstrates that harmonization consistently boosts performance across architectures, with <strong>EfficientNet-B0 reaching 93.54% AUC</strong> for breast cancer diagnosis.
+        </p>
+    </div>
+    
     <div class="content-section">
-        <p align="center"><img src="figures/samples.png" alt="Samples"></p>
-        <p align="center"><img src="figures/pipeline.png" alt="Pipeline"></p>
 
         <h2>Abstract</h2>
         <p>Publicly available full-field digital mammography (FFDM) datasets remain limited in size, clinical annotations, and vendor diversity, hindering the development of robust models. We introduce LUMINA, a curated, multi-vendor FFDM dataset that explicitly encodes acquisition energy and vendor metadata to capture clinically relevant appearance variations often overlooked in existing benchmarks. This dataset contains 1824 images from 468 patients (960 benign, 864 malignant), with pathology-confirmed labels, BI-RADS assessments, and breast-density annotations. LUMINA spans six acquisition systems and includes both high- and low-energy imaging styles, enabling systematic analysis of vendor- and energy-induced domain shifts. To address these variations, we propose a foreground-only pixel-space alignment method (''energy harmonization'') that maps images to a low-energy reference while preserving lesion morphology. We benchmark CNN and transformer models on three clinically relevant tasks: diagnosis (benign vs. malignant), BI-RADS classification, and density estimation. Two-view models consistently outperform single-view models. EfficientNet-B0 achieves an AUC of 93.54% for diagnosis, while Swin-T achieves the best macro-AUC of 89.43% for density prediction. Harmonization improves performance across architectures and produces more localized Grad-CAM responses. Overall, LUMINA provides (1) a vendor-diverse benchmark and (2) a model-agnostic harmonization framework for reliable and deployable mammography AI.</p>
 
-        <h2>Dataset Statistics</h2>
+        <h2>Dataset</h2>
+        <p align="center"><img src="figures/samples.png" alt="Samples"></p>
         <p align="center"><img src="figures/comparision.png" alt="comparision.png"></p>
         <p align="center"><img src="figures/distribution.png" alt="distribution.png"></p>
+
+        <h2>Pipeline</h2>
+        <p align="center"><img src="figures/pipeline.png" alt="Pipeline"></p>
         
         <h2>Benchmark Results</h2>
         <p align="center"><img src="figures/diagnosis.png" alt="Diagnosis"></p>
