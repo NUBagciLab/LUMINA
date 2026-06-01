@@ -9,6 +9,7 @@
 </p>
 
 # Paper link:
+CVPR: https://openaccess.thecvf.com/content/CVPR2026/html/Pan_LUMINA_A_Multi-Vendor_Mammography_Benchmark_with_Energy_Harmonization_Protocol_CVPR_2026_paper.html
 arXiv: https://arxiv.org/abs/2603.14644
 
 # Dataset
