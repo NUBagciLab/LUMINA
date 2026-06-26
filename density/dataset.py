@@ -130,7 +130,7 @@ def LUMINA_Density(root='/dataset/Mammogram/LUMINA_PNG', view=2):
             if df['BREAST COMPOSITION'][i] == '-':
                 if df['RIGHT_OR_LEFT'][i+1] == 'BILATERAL':
                     for file in ['L_CC', 'R_CC']:
-                        image1.append(os.path.join(root, label, df['ID'][i]+file+'.dcm'))       
+                        image1.append(os.path.join(root, label, df['ID'][i]+file+'.png'))       
                         label1.append(np.int64(df['BREAST COMPOSITION'][i+1])-1)
                         
                 elif df['RIGHT_OR_LEFT'][i+1] == 'LEFT':
