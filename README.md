@@ -21,9 +21,13 @@ Dataset on OSF: https://osf.io/b63jc/
 
 Please download LUMINA_PNG, Benign_Cases.xlsx, and Malign_Cases.xlsx, then put the two xlsx files under LUMINA_PNG. Other files are provided for reference. You can create a folder called "dataset" and put LUMINA_PNG in it.
 
-# (Optional) To harmonize LUMINA dataset (generate LUMINA and LUMINA_PNG using LUMINA_RAW):
+# (Optional) To harmonize LUMINA dataset (generate LUMINA and LUMINA_PNG using LUMINA_RAW), open folder `harmonize`, the run:
 
     python harmonize.py --data-path PATH_TO_LUMINA_RAW -o ./LUMINA
+
+If you want to harmoize using the png files directly (generate LUMINA_PNG using LUMINA_RAW_PNG), please run
+    
+    python harmonize_png.py --data-path PATH_TO_LUMINA_RAW -o ./LUMINA_PNG
 
 # Training and Testing
 In each task (Diagnosis, BIRADS, Density), go to the corresponding folder then run
@@ -42,7 +46,7 @@ For example:
 You can get the test results by running the command like the following:
 
     python fold_test.py --model --data-path /dataset/LUMINA_PNG --model efficientnet_b0 --input-size 224
-Here, [--input-size] can be 224 or 512, [--model] can be efficientnet_b0, densenet121, resnet50, or swin_t.
+Here, `[--input-size]` can be `224` or `512`, `[--model]` can be `efficientnet_b0`, `densenet121`, `resnet50`, or swin_t.
 
 The pretrained weights are available at https://drive.google.com/drive/folders/1_40R3yt2jjLXMzLksgqo06J2KIt9-vKb?usp=sharing
 
