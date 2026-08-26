@@ -73,7 +73,7 @@ def process_file(args_tuple):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="MammoFL")
     parser.add_argument("--data-path", default="/dataset/Mammogram/LUMINA_RAW_PNG", type=str, help="dataset path")
-    parser.add_argument("-o", "--output-dir", default="./LUMINA", type=str, help="path to save outputs")
+    parser.add_argument("-o", "--output-dir", default="./LUMINA_PNG", type=str, help="path to save outputs")
     parser.add_argument("-r", "--ref", default="/dataset/Mammogram/LUMINA_RAW_PNG/Malign/8L_CC.png", type=str, help="reference image path")
     
     args = parser.parse_args()
